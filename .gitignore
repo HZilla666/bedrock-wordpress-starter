@@ -1,0 +1,29 @@
+# 📄 Fichiers d’environnement (jamais en versionnage)
+.env
+.env.*
+
+# 📦 Dépendances Composer et Node.js (à ne jamais committer)
+/vendor/
+/node_modules/
+
+# 📁 Dossier du core WordPress installé via Composer
+/web/wp/
+
+# 🛠️ Fichiers temporaires, IDE, OS
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# 📦 Archives et scripts d'installation/déploiement
+*.zip
+deploy.sh
+
+# 📂 Fichiers CI/CD ou spécifiques à l'hébergement (à ajuster selon usage)
+# Décommenter si tu veux versionner le workflow GitHub
+# Commenter si tu ne veux pas le déployer
+# .github/
+
+# ❌ À ne PAS exclure si utilisé par GitHub Actions pour le déploiement
+# Commenter uniquement en cas de déploiement manuel
+.rsyncignore

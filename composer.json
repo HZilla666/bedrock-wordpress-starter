@@ -1,0 +1,50 @@
+
+{
+  "name": "objectifseo/bedrock-wordpress-starter",
+  "type": "project",
+  "license": "MIT",
+  "description": "Site WordPress bas\u00e9 sur Bedrock avec Neve + s\u00e9curit\u00e9 et performances optimis\u00e9es.",
+  "authors": [
+    {
+      "name": "Julia GALINDO",
+      "email": "julia@objectifseo.fr"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "composer/installers": "^2.2",
+    "roots/bedrock": "^1.22",
+    "wpackagist-theme/neve": "*",
+    "wpackagist-plugin/blackhole-bad-bots": "*",
+    "wpackagist-plugin/litespeed-cache": "*",
+    "wpackagist-plugin/seo-by-rank-math": "*",
+    "wpackagist-plugin/better-wp-security": "*",
+    "wpackagist-plugin/wps-hide-login": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    },
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "platform": {
+      "php": "8.1"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
