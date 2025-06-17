@@ -1,0 +1,11 @@
+.git/
+.github/
+node_modules/
+.env
+web/wp/
+vendor/
+README.md
+install.sh
+install.bat
+deploy.sh
+composer.lock
