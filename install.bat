@@ -1,4 +1,5 @@
 @echo off
+cd /d "%~dp0"
 echo 🚀 Initialisation du projet Bedrock
 
 if not exist ".env" (

@@ -1,4 +1,6 @@
 #!/bin/bash
+cd "$(dirname "$0")"
+
 echo "🚀 Initialisation du projet Bedrock"
 
 if [ ! -f .env ]; then

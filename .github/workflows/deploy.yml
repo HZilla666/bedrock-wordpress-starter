@@ -18,8 +18,12 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_KEY }}
 
-      - name: 🧪 Installation des dépendances
+      - name: 📦 Installation des dépendances
         run: composer install --no-dev --optimize-autoloader
+
+      - name: 🔌 Tester la connexion SSH
+        run: ssh -p 22 -o BatchMode=yes -o ConnectTimeout=10 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo 'Connexion SSH OK'"
+
 
       - name: 📂 Déploiement via rsync
         run: |

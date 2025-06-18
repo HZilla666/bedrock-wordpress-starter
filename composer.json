@@ -3,7 +3,7 @@
   "name": "objectifseo/bedrock-wordpress-starter",
   "type": "project",
   "license": "MIT",
-  "description": "Site WordPress bas\u00e9 sur Bedrock avec Neve + s\u00e9curit\u00e9 et performances optimis\u00e9es.",
+  "description": "Starter WordPress basé sur Bedrock, Neve et optimisé SEO/sécurité.",
   "authors": [
     {
       "name": "Julia GALINDO",
@@ -37,7 +37,8 @@
   },
   "config": {
     "allow-plugins": {
-      "composer/installers": true
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true
     },
     "optimize-autoloader": true,
     "preferred-install": "dist",
