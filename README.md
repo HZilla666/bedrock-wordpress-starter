@@ -39,7 +39,7 @@ Tu peux les modifier dans le `composer.json`.
 ### ✅ Option 1 : Démarrer un nouveau projet avec l'installeur
 
 ```bash
-composer create-project objectifseo/bedrock-wordpress-starter monsite
+git clone https://github.com/objectifseo/bedrock-wordpress-starter.git monsite
 cd monsite
 ./install.sh      # ou install.bat sur Windows
 ```
